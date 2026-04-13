@@ -6,7 +6,7 @@ for country in countries:
     if country in visa_required:
         continue
     else:
-        travel_list = travel_list + countries
+        travel_list.append(country)
     if len(travel_list) == 10:
         break
     
